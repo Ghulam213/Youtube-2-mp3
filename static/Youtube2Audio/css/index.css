@@ -1,0 +1,49 @@
+.navbar-brand{
+	/*font-family: 'Monoton', cursive;*/
+	/*font-family: 'Fredericka the Great', cursive;*/
+	font-family: 'Sarina', cursive;
+}
+
+#navbar-list{
+	flex-direction: row;
+	float: right;
+}
+
+#navbar-list li{
+	padding: 0px 10px;
+}
+
+nav .container{
+	width: 90%;
+	height: 40px;
+}
+
+#main-container{
+	margin: auto;
+	padding: 20px;
+}
+
+#main-heading {
+	text-align: center;
+}
+
+.jumbotron{
+	padding: 4rem 6rem;
+}
+
+#urlInput{
+	border-radius: 3px;
+}
+
+#label{
+	margin-top: 6px;
+}
+
+@media screen and (min-width: 720px){
+	nav .container{
+	width: 70%;
+	height: 40px;
+}
+}
+
+

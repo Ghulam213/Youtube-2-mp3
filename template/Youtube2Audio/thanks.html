@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block container %}
+    <h1>Thank You!🙂</h1>
+    <p>Thanks for visiting our website.</p>
+    <p>Your download will start Automatically. If it doesn't please click download button.</p>
+    <a class = "btn btn-success" href="{%  url 'Youtube2Audio:download' %}">Download</a>
+    <script>location.href="{%  url 'Youtube2Audio:download' %}";</script>
+{% endblock %}

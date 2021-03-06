@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Convert It</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'Youtube2Audio/css/index.css' %}"/>
+	<link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet">
+</head>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+
+		<div class="container">
+			<a class="navbar-brand" href="#main-container">CONVERT IT</a>
+			<div>
+				<ul class=" nav navbar-nav" id = "navbar-list">
+				  <li class="nav-item active">
+				    <a class="nav-link" href="#main-container">Home <span class="sr-only">(current)</span></a>
+				  </li>
+				  <li class="nav-item">
+				    <a class="nav-link" href="#use-block">Use</a>
+				  </li>
+				<!-- 	      <li class="nav-item">
+				    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+				  </li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<body>
+	    <div class="container" id = "main-container">
+            <div class="jumbotron" >
+                {% block container %}
+
+                {% endblock %}
+            </div>
+        </div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"></script>
+
+		<script src="{% static 'Youtube2Audio/js/index.js' %}"></script>
+
+	</body>
+</html>

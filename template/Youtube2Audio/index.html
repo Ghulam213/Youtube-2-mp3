@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block container %}
+    <div class="container" id = "main-heading">
+        <h2>Convert Your Youtube video to Audio!!!</h2>
+        <p>Paste your youtube video link below and leave the rest to us.</p><br>
+    </div>
+
+
+    <form method="POST">
+        <div class="input-group">
+<!--		<label class = "mr-sm-2" for="urlInput" id = "label">Youtube Address:</label>					    -->
+<!--		<input type="url" class="form-control mr-sm-2" id="urlInput" placeholder="https://www.youtube.com/example123">-->
+            {{ form }}
+            {% csrf_token %}
+            <input id = "conBtn" type="submit" class="btn btn-outline-primary my-2 my-sm-0" value="Convert"/>
+        </div>
+    </form>
+    <br>
+
+    <div id = "use-block">
+        <h3>A Quick and Easy way to Convert your Videos to Audios.</h3>
+        <br>
+        <ol>
+            <li>Copy the link of your youtube video.</li>
+            <li>Paste it in the input field above.</li>
+            <li>Press Convert button, sit back and Relax. Let our Algorithm do the hard work for you!</li>
+        </ol>
+    </div>
+    <br>
+
+    <div class="container">
+        <p>By using our converter you can easily convert your YouTube videos to mp3 audio files and download them for free</p>
+        <p>The videos are always converted in the highest available quality. Please note that the convert can convert videos up to a length of 1 hour - the limitation is necessary, so the conversion of any video will not take
+        more than few minutes.</p>
+        <p>Enjoy! We hope you like our service.</p>
+    </div>
+
+{% endblock %}
